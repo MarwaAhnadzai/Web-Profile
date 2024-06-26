@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Ahmadzai - Experience</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .card {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #fff;
+    }
+
+    .card p {
+      color: #f0f0f0;
+    }
+    /* Day Mode */
+    .day-mode {
+      background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+      color: #000000; /* Dark gray */
+    }
+    /* Night Mode */
+    .night-mode {
+      background-color: #333; /* Set your desired background color */
+      color: #f9fafb; /* Set your desired text color */
+    }
+    /* Custom CSS for Edit My User Profile section */
+.input-field {
+  appearance: none;
+  border: 2px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #4C51BF;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4338CA;
+}
+
+  </style>
+</head>
+
+<body class="day-mode min-h-screen font-sans antialiased text-white">
+  <!-- Profile Section -->
+  <div id="profile" class="bg-gradient-to-br from-indigo-600 to-purple-700 h-55 md:h-50 flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Marwa Ahmadzai</h1>
+      <p class="text-xl mb-8">Software Development and Network Engineering Student</p>
+      <!-- Add social media icons or other profile details here -->
+    </div>
+    <div class="absolute top-0 right-0 h-12 w-18 p-4">
+      <button class="js-change-theme focus:outline-none">🌙</button>
+    </div>
+  </div>
+
+
+  <!-- Options -->
+  <div class="container mx-auto px-4 py-8 text-center">
+    <div class="flex justify-center">
+        <div class="px-2">
+            <a href="index.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Profile
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="experience.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Experience
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="skills.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Skills
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="hobbies.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Hobbies
+            </a>
+        </div>
+       
+    </div>
+    
+    </div>
+
+  </div>
+<!-- Edit My User Profile Section -->
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-3xl font-bold mb-4 text-center">Edit My User Profile</h2>
+  <form>
+    <!-- Profile Image -->
+    <div class="mb-6">
+      <label for="profile-image" class="block text-center font-bold mb-2">Profile Image</label>
+      <div class="flex items-center justify-center w-full">
+        <label for="profile-image-upload" class="cursor-pointer flex items-center justify-center w-24 h-24 bg-gray-200 border-2 border-dashed border-gray-400 rounded-full">
+          <input type="file" id="profile-image-upload" name="profile-image-upload" accept="image/*" class="hidden">
+          <svg class="w-8 h-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+          </svg>
+        </label>
+      </div>
+    </div>
+    
+    <!-- Nickname -->
+    <div class="mb-6">
+      <label for="nickname" class="block text-sm font-bold mb-2">Nickname</label>
+      <input type="text" id="nickname" name="nickname" class="input-field">
+    </div>
+    
+    <!-- Hometown -->
+    <div class="mb-6">
+      <label for="hometown" class="block text-sm font-bold mb-2">Hometown</label>
+      <input type="text" id="hometown" name="hometown" class="input-field">
+    </div>
+    
+    <!-- Personal Info -->
+    <div class="mb-6">
+      <label for="date-of-birth" class="block text-sm font-bold mb-2">Date of Birth</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" class="input-field">
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="mb-6">
+      <label for="email" class="block text-sm font-bold mb-2">Email</label>
+      <input type="email" id="email" name="email" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="home-phone" class="block text-sm font-bold mb-2">Home Phone</label>
+      <input type="tel" id="home-phone" name="home-phone" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="business-phone" class="block text-sm font-bold mb-2">Business Phone</label>
+      <input type="tel" id="business-phone" name="business-phone" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="mobile-phone" class="block text-sm font-bold mb-2">Mobile Phone</label>
+      <input type="tel" id="mobile-phone" name="mobile-phone" class="input-field">
+    </div>
+    
+    <!-- Education and Work -->
+    <div class="mb-6">
+      <label for="employer" class="block text-sm font-bold mb-2">Employer</label>
+      <input type="text" id="employer" name="employer" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="position" class="block text-sm font-bold mb-2">Position</label>
+      <input type="text" id="position" name="position" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="high-school" class="block text-sm font-bold mb-2">High School</label>
+      <input type="text" id="high-school" name="high-school" class="input-field">
+    </div>
+    <div class="mb-6">
+      <label for="university" class="block text-sm font-bold mb-2">University</label>
+      <input type="text" id="university" name="university" class="input-field">
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+      <button type="submit" class="btn-primary">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+  
+  <!-- Footer with JavaScript -->
+  
+  <footer class="text-center mt-8 bg-purple-700 text-white flex justify-center items-center h-16">
+        
+    <p>Visitor Count: <span id="visitorCount">0</span></p>
+    <script src="visitor-counter.js"></script>
+
+</footer>
+
+ <!-- JavaScript -->
+ <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+ <script src="https://unpkg.com/tippy.js@4"></script>
+ <script>
+   //Init tooltips
+   tippy('.link', {
+     placement: 'bottom'
+   })
+
+   const toggle = document.querySelector('.js-change-theme');
+   const body = document.querySelector('body');
+
+   toggle.addEventListener('click', () => {
+     body.classList.toggle('day-mode');
+     body.classList.toggle('night-mode');
+   });
+ </script>
+</body>
+
+</html>
+

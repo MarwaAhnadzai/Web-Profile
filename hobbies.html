@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Ahmadzai - Hobbies</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    /* Day Mode */
+    .day-mode {
+        background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+      color: #000000;
+    }
+
+    /* Night Mode */
+    .night-mode {
+      background-color: #333; /* Dark gray */
+      color: #f9fafb; /* White */
+    }
+
+    .hobbies-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .box2 {
+      margin-top: 50px;
+    }
+
+    .box2 h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .box2 p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .box2 iframe {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body class="day-mode min-h-screen font-sans antialiased text-white">
+  
+
+    <!-- Profile Section -->
+    <div id="profile" class="bg-gradient-to-br from-indigo-600 to-purple-700 h-55 md:h-50 flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Marwa Ahmadzai</h1>
+        <p class="text-xl mb-8">Software Development and Network Engineering Student</p>
+      </div>
+      <!-- Pin to top right corner -->
+      <div class="absolute top-0 right-0 h-12 w-18 p-4">
+        <button class="js-change-theme focus:outline-none">🌙</button>
+      </div>
+    </div>
+    <br>
+    <div class="flex justify-center mb-8">
+        <div class="px-2">
+          <a href="index.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+            Profile
+          </a>
+        </div>
+        <div class="px-2">
+          <a href="experience.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+            Experience
+          </a>
+        </div>
+        <div class="px-2">
+          <a href="skills.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+            Skills
+          </a>
+        </div>
+        <div class="px-2">
+          <a href="about.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+            About Me
+          </a>
+        </div>
+      </div>
+  <!-- Hobbies Section -->
+  <div class="container mx-auto px-4 py-8 hobbies-section">
+    <section class="box2">
+      <h2>About Me and My Interest in Soccer</h2>
+      <p>
+        I am Marwa Ahmadzai, and I have a deep passion for soccer. 
+        I not only enjoy playing the game but also find immense joy 
+        in watching it. Soccer is more than just a sport to me; it's a 
+        source of inspiration and excitement in my life. Whether I'm cheering 
+        for my favorite team or kicking a ball on the field, soccer has a special
+        place in my heart, and it brings people together in a way that transcends
+        boundaries.
+      </p>
+      <iframe width="700" height="400" src="video/Neymar JR HD.mp4" frameborder="0" allowfullscreen></iframe>
+      <h2>My Favorite Player: Neymar</h2>
+      <p>
+        Neymar Jr. is one of my favorite soccer players, 
+        known for his incredible skill, flair, and creativity
+        on the field. His lightning-fast dribbling and ability 
+        to score breathtaking goals have made him a global football 
+        sensation. Not only is Neymar a prolific scorer, but he also
+        has a knack for setting up his teammates with brilliant assists.
+        Off the pitch, his charismatic personality and charitable endeavors 
+        have made him a beloved figure in the football community. Neymar's 
+        passion for the game and his dedication to making a positive impact on 
+        and off the field make him a truly inspirational athlete.
+      </p>
+    </section>
+  </div>
+
+  <!-- Footer with JavaScript -->
+  <footer class="text-center mt-8 bg-purple-700 text-white flex justify-center items-center h-16">
+    <p class="visitor-count">Visitor Count: <span id="visitorCount">0</span></p>
+    <script src="visitor-counter.js"></script>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    //Init tooltips
+    tippy('.link', {
+      placement: 'bottom'
+    })
+
+    const toggle = document.querySelector('.js-change-theme');
+    const body = document.querySelector('body');
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('day-mode');
+      body.classList.toggle('night-mode');
+    });
+  </script>
+</body>
+
+</html>

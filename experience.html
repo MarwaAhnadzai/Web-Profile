@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Ahmadzai - Experience</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .card {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: #fff;
+    }
+
+    .card p {
+      color: #f0f0f0;
+    }
+    /* Day Mode */
+    .day-mode {
+      background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+      color: #000000; /* Dark gray */
+    }
+    /* Night Mode */
+    .night-mode {
+      background-color: #333; /* Set your desired background color */
+      color: #f9fafb; /* Set your desired text color */
+    }
+  </style>
+</head>
+
+<body class="day-mode min-h-screen font-sans antialiased text-white">
+  <!-- Profile Section -->
+  <div id="profile" class="bg-gradient-to-br from-indigo-600 to-purple-700 h-55 md:h-50 flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Marwa Ahmadzai</h1>
+      <p class="text-xl mb-8">Software Development and Network Engineering Student</p>
+      <!-- Add social media icons or other profile details here -->
+    </div>
+    <div class="absolute top-0 right-0 h-12 w-18 p-4">
+      <button class="js-change-theme focus:outline-none">🌙</button>
+    </div>
+  </div>
+
+
+  <!-- Options -->
+  <div class="container mx-auto px-4 py-8 text-center">
+    <h2 class="text-3xl font-bold mb-8">Explore</h2>
+    <div class="flex justify-center">
+        <div class="px-2">
+            <a href="index.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Profile
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="skills.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Skills
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="hobbies.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                Hobbies
+            </a>
+        </div>
+        <div class="px-2">
+            <a href="about.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+                About
+            </a>
+        </div>
+    </div>
+    
+    </div>
+
+  </div>
+
+  <!-- Professional Experience -->
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold mb-8">My Creative Learning Journey</h1>
+    <div class="mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Web Development -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">Web Development </h3>
+        <p class="text-sm">As a Web Development Intern, I was involved in front-end development tasks, focusing on creating engaging and user-friendly web applications. I collaborated with the design and development teams to implement responsive and visually appealing user interfaces using HTML, CSS, and JavaScript. Additionally, I gained experience in integrating third-party APIs and optimizing web performance. Throughout the internship, I contributed to the development lifecycle, from initial design concepts to final deployment, and gained valuable insights into web development best practices and emerging technologies. I learned about modern web development frameworks like React.js and Vue.js, as well as the importance of cross-browser compatibility and accessibility in web design.</p>
+      </div>
+
+      <!-- C++ Development -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">C++ Development </h3>
+        <p class="text-sm">During a class project focused on C++ development, I collaborated with peers to create a software application for data manipulation and analysis. This project allowed me to apply my knowledge of C++ programming concepts, such as object-oriented programming, data structures, and algorithms, to solve real-world problems. Through this experience, I improved my problem-solving skills, learned about memory management in C++, and gained practical experience in software development methodologies.</p>
+      </div>
+
+      <!-- Python Development -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">Python Development </h3>
+        <p class="text-sm">In a Python development project, I worked on building a web application for data visualization and analysis. I utilized Python frameworks such as Django and Flask to develop the backend logic and RESTful APIs, while also leveraging libraries like Matplotlib and Plotly for data visualization. This project provided me with valuable experience in full-stack development using Python, including database integration, API development, and front-end design. Additionally, I learned about best practices in Python programming, code optimization, and deployment strategies for web applications.</p>
+      </div>
+
+      <!-- Database Management -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">Database Management</h3>
+        <p class="text-sm">Through coursework and practical projects, I gained proficiency in database management systems such as MySQL and MongoDB. I learned about database design principles, SQL query optimization, and data modeling techniques. Additionally, I gained hands-on experience in database administration tasks, including database installation, configuration, and maintenance. This knowledge allowed me to effectively design and implement database solutions for various applications, ensuring data integrity, security, and scalability.</p>
+      </div>
+
+      <!-- JavaScript Development -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">JavaScript Development </h3>
+        <p class="text-sm">In a JavaScript development project, I focused on building interactive and dynamic web applications. I used JavaScript frameworks like React.js and Node.js to develop both frontend and backend components of web applications. This project helped me deepen my understanding of JavaScript programming, asynchronous programming, and server-side development with Node.js. Additionally, I learned about modern JavaScript features, such as ES6 syntax, modules, and functional programming concepts, which enhanced my coding skills and problem-solving abilities.</p>
+      </div>
+
+      <!-- CSS Styling -->
+      <div class="card p-6 hover:shadow-lg rounded-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out">
+        <h3 class="text-lg font-semibold mb-2">CSS Styling </h3>
+        <p class="text-sm">As part of a CSS styling project, I focused on creating visually appealing and responsive user interfaces for web applications. I experimented with CSS preprocessors like Sass and LESS to streamline my styling workflow and improve code maintainability. Additionally, I learned about CSS frameworks like Bootstrap and Tailwind CSS, which helped me accelerate the development process by providing pre-designed UI components and utility classes. Through this project, I gained expertise in modern CSS techniques, including flexbox, grid layout, and CSS animations, enabling me to design immersive and intuitive user experiences.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with JavaScript -->
+  
+  <footer class="text-center mt-8 bg-purple-700 text-white flex justify-center items-center h-16">
+        
+    <p>Visitor Count: <span id="visitorCount">0</span></p>
+    <script src="visitor-counter.js"></script>
+
+</footer>
+
+ <!-- JavaScript -->
+ <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+ <script src="https://unpkg.com/tippy.js@4"></script>
+ <script>
+   //Init tooltips
+   tippy('.link', {
+     placement: 'bottom'
+   })
+
+   const toggle = document.querySelector('.js-change-theme');
+   const body = document.querySelector('body');
+
+   toggle.addEventListener('click', () => {
+     body.classList.toggle('day-mode');
+     body.classList.toggle('night-mode');
+   });
+ </script>
+</body>
+
+</html>
+

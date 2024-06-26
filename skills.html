@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marwa Ahmadzai - Skills</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    /* Day Mode */
+    .day-mode {
+      background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+      color: #000000; /* Dark gray */
+    }
+
+    /* Night Mode */
+    .night-mode {
+      background-color: #333; /* Dark gray */
+      color: #f9fafb; /* White */
+    }
+
+    .skills-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .skills-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .skills-list li {
+      margin-bottom: 10px;
+    }
+
+    .about-me {
+      margin-top: 30px;
+    }
+
+    .additional-skills {
+      margin-top: 50px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #4F46E5; /* Purple border */
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .visitor-count {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="day-mode min-h-screen font-sans antialiased text-white">
+  
+
+  <!-- Profile Section -->
+  <div id="profile" class="bg-gradient-to-br from-indigo-600 to-purple-700 h-55 md:h-50 flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Marwa Ahmadzai</h1>
+      <p class="text-xl mb-8">Software Development and Network Engineering Student</p>
+      <!-- Add social media icons or other profile details here -->
+    </div>
+    <!-- Pin to top right corner -->
+    <div class="absolute top-0 right-0 h-12 w-18 p-4">
+      <button class="js-change-theme focus:outline-none">🌙</button>
+    </div>
+  </div>
+  <br>
+<!-- Navigation Links -->
+<div class="flex justify-center mb-8">
+    <div class="px-2">
+      <a href="index.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+        Profile
+      </a>
+    </div>
+    <div class="px-2">
+      <a href="experience.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+        Experience
+      </a>
+    </div>
+    <div class="px-2">
+      <a href="hobbies.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+        Hobbies
+      </a>
+    </div>
+    <div class="px-2">
+      <a href="about.html" class="bg-gradient-to-br from-indigo-600 to-purple-700 hover:from-indigo-800 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-full flex items-center justify-center">
+        About Me
+      </a>
+    </div>
+  </div>
+  <!-- Skills Section -->
+  <div class="container mx-auto px-4 py-8 skills-section">
+    <section>
+      <h2 class="section-title text-3xl font-bold mb-4">Technical Skills</h2>
+      <ul class="skills-list">
+        <li>Programming Languages: Java, Python, JavaScript</li>
+        <li>Web Development: HTML5, CSS3, JavaScript, React</li>
+        <li>Database Management: SQL, MongoDB</li>
+        <li>Networking: TCP/IP, Subnetting, VLANs</li>
+      </ul>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+      <h2 class="section-title text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg">I am a passionate software development and network engineering student with a keen interest in exploring the latest technologies and solving real-world problems through innovative solutions. Throughout my academic journey, I have acquired a diverse set of skills in programming languages, web development, database management, and networking. I am enthusiastic about continuous learning and strive to stay updated with industry trends and best practices.</p>
+    </section>
+
+    <!-- Additional Skills Section -->
+    <section class="additional-skills">
+      <h2 class="section-title text-3xl font-bold mb-4">Additional Skills</h2>
+      <p class="text-lg">In addition to my technical skills, I possess strong communication and teamwork abilities, which I have honed through group projects and extracurricular activities. I am proficient in problem-solving and analytical thinking, enabling me to approach challenges with creativity and efficiency. I also have experience in project management and leadership roles, where I have successfully coordinated tasks and motivated team members to achieve project objectives.</p>
+    </section>
+  </div>
+
+  <!-- Footer with JavaScript -->
+  <footer class="text-center mt-8 bg-purple-700 text-white flex justify-center items-center h-16">
+    <p class="visitor-count">Visitor Count: <span id="visitorCount">0</span></p>
+    <script src="visitor-counter.js"></script>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+    //Init tooltips
+    tippy('.link', {
+      placement: 'bottom'
+    })
+
+    const toggle = document.querySelector('.js-change-theme');
+    const body = document.querySelector('body');
+    const profile = document.getElementById('profile');
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('day-mode');
+      body.classList.toggle('night-mode');
+    });
+  </script>
+</body>
+
+</html>

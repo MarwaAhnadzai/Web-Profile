@@ -1,0 +1,350 @@
+/* Global styles */
+#profile {
+    margin: 0 auto; /* Set left and right margins to auto */
+    max-width: 90%; /* Set a maximum width for the profile div */
+}
+
+.link {
+    text-decoration: none; /* Remove default underline */
+}
+
+.link svg {
+    transition: fill 0.3s ease; /* Smooth transition for fill color */
+}
+
+.link:hover svg {
+    fill: #34d399; /* Change fill color on hover */
+}
+
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #374151; /* Default text color */
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Background gradient */
+}
+
+.text-gray-600 {
+    color: #718096; /* Adjust text color */
+}
+
+.text-green-700 {
+    color: #48bb78; /* Adjust text color */
+}
+
+.text-white {
+    color: #fff; /* Adjust text color */
+}
+
+.font-bold {
+    font-weight: bold; /* Make text bold */
+}
+
+.bg-white {
+    background-color: #fff; /* Set background color */
+}
+
+.bg-gray-900 {
+    background-color: #4b5563; /* Set background color */
+}
+
+.rounded-full {
+    border-radius: 9999px; /* Make element fully rounded */
+}
+
+.py-2 {
+    padding-top: 0.5rem; /* Adjust vertical padding */
+    padding-bottom: 0.5rem; /* Adjust vertical padding */
+}
+
+.px-4 {
+    padding-left: 1rem; /* Adjust horizontal padding */
+    padding-right: 1rem; /* Adjust horizontal padding */
+}
+
+.mb-8 {
+    margin-bottom: 2rem; /* Adjust bottom margin */
+}
+
+.flex {
+    display: flex; /* Use flexbox for layout */
+}
+
+.justify-center {
+    justify-content: center; /* Center items horizontally */
+}
+
+.items-center {
+    align-items: center; /* Center items vertically */
+}
+
+.pt-8 {
+    padding-top: 2rem; /* Adjust top padding */
+}
+
+.pb-16 {
+    padding-bottom: 4rem; /* Adjust bottom padding */
+}
+
+.w4 {
+    width: 80%; /* Set width to 80% */
+}
+
+.w-full {
+    width: 100%; /* Set width to 100% */
+}
+
+.h-auto {
+    height: auto; /* Set height to auto */
+}
+
+.lg:h-screen {
+    height: 100vh; /* Set height to viewport height on large screens */
+}
+
+.max-w-4xl {
+    max-width: 64rem; /* Set maximum width */
+}
+
+.mx-auto {
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.my-32 {
+    margin-top: 8rem; /* Adjust top margin */
+    margin-bottom: 8rem; /* Adjust bottom margin */
+}
+
+.lg:mx-0 {
+    margin-left: 0; /* Remove left margin on large screens */
+    margin-right: 0; /* Remove right margin on large screens */
+}
+
+.mx-6 {
+    margin-left: 1.5rem; /* Adjust horizontal margin */
+    margin-right: 1.5rem; /* Adjust horizontal margin */
+}
+
+.absolute {
+    position: absolute; /* Position absolutely */
+}
+
+.top-0 {
+    top: 0; /* Position at the top */
+}
+
+.right-0 {
+    right: 0; /* Position at the right */
+}
+
+.h-12 {
+    height: 3rem; /* Set height */
+}
+
+.w-18 {
+    width: 4.5rem; /* Set width */
+}
+
+.p-4 {
+    padding: 1rem; /* Set padding */
+}
+
+.focus\:outline-none:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.bg-purple-700 {
+    background-color: #805ad5; /* Set background color */
+}
+
+.mt-8 {
+    margin-top: 2rem; /* Adjust top margin */
+}
+
+.h-16 {
+    height: 4rem; /* Set height */
+}
+
+.flex-wrap {
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.top-0 {
+    top: 0; /* Position at the top */
+}
+
+.right-0 {
+    right: 0; /* Position at the right */
+}
+
+.bottom-0 {
+    bottom: 0; /* Position at the bottom */
+}
+
+.left-0 {
+    left: 0; /* Position at the left */
+}
+
+.js-change-theme {
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+.js-change-theme:hover {
+    color: #805ad5; /* Change text color on hover */
+}
+
+.js-change-theme:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.hover\:from-indigo-800:hover {
+    background-color: #8b5cf6; /* Change background color on hover */
+}
+
+.hover\:to-purple-800:hover {
+    background-color: #6d28d9; /* Change background color on hover */
+}
+
+.hover\:text-green-700:hover {
+    color: #48bb78; /* Change text color on hover */
+}
+
+.hover\:text-gray-600:hover {
+    color: #718096; /* Change text color on hover */
+}
+/* Custom CSS */
+/* Day Mode */
+.day-mode {
+    background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+    color: #000000; /* Dark gray */
+  }
+  
+  /* Night Mode */
+  .night-mode {
+    background-color: #333; /* Dark gray */
+    color: #f9fafb; /* White */
+  }
+  
+  .skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  }
+  
+  .about-me {
+    margin-top: 30px;
+  }
+  
+  .additional-skills {
+    margin-top: 50px;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #4F46E5; /* Purple border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .visitor-count {
+    font-size: 14px;
+  }
+  /* Custom CSS */
+.card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    color: #fff;
+  }
+  
+  .card p {
+    color: #f0f0f0;
+  }
+  
+  /* Day Mode */
+  .day-mode {
+    background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+    color: #000000; /* Dark gray */
+  }
+  
+  /* Night Mode */
+  .night-mode {
+    background-color: #333; /* Dark gray */
+    color: #f9fafb; /* White */
+  }
+  /* Custom CSS */
+.card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    color: #fff;
+  }
+  
+  .card p {
+    color: #f0f0f0;
+  }
+  
+  /* Day Mode */
+  .day-mode {
+    background: linear-gradient(135deg, #5EFCE8, #736EFE); /* Green gradient */
+    color: #000000; /* Dark gray */
+  }
+  
+  /* Night Mode */
+  .night-mode {
+    background-color: #333; /* Dark gray */
+    color: #f9fafb; /* White */
+  }
+  
+  /* Custom CSS for Edit My User Profile section */
+  .input-field {
+    appearance: none;
+    border: 2px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    background-color: #4C51BF;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4338CA;
+  }
+  
